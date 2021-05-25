@@ -2,7 +2,7 @@
     "name": "salesforceconsulting",
     "description": "My amazing LWC app",
     "version": "0.0.1",
-    "author": "jaiswalSomi",
+    "author": "salesforcetroop",
     "bugs": "https://github.com/jaiswalSomi/salesforceconsulting/issues",
     "dependencies": {
         "compression": "^1.7.4",

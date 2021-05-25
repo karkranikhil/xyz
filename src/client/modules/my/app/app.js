@@ -1,3 +1,21 @@
-import { LightningElement } from 'lwc';
+import {LightningElement} from 'lwc'
+export default class App extends LightningElement{
+     name="sftroop"
+     technologies = ['LWC OSS', 'Bootstrap', 'ExpressJs', 'Nodemailer', 'Heroku']
+     
+     greetingmsg="Hello i am greeting msg from app component"
+     changeName(){
+         this.name="LWC OSS"
+     }
 
-export default class App extends LightningElement {}
+     get addNumber(){
+         return 1+2
+     }
+
+
+     nameChange(event){
+        this.name = event.detail
+     }
+
+
+}
