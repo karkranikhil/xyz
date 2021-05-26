@@ -1,5 +1,7 @@
 import { LightningElement } from 'lwc';
+import BANNER_DATA from '../../../data/bannerData'
 export default class Banner extends LightningElement {
-    heading='Salesforce Implementation and Consulting Services'
-    description='We have a fantastic team of Salesforce accredited experts and advisors who are dedicated to delivering nothing but the best.'
+    heading=BANNER_DATA.heading
+    description=BANNER_DATA.description
+    bannerBtnText=BANNER_DATA.bannerBtnText
 }

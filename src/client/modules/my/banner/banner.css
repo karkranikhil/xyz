@@ -2,7 +2,7 @@
     height: calc(100vh - 74px);
 }
 .banner-content{
-    max-width: 550px;
+    max-width: 670px;
 }
 .content-center{
     display:flex;
