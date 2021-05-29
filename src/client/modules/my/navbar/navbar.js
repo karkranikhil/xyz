@@ -3,6 +3,7 @@ import NAV_DATA from '../../../data/navbarData.js'
 export default class Navbar extends LightningElement{
     navList = NAV_DATA
     isMobileToggle = false
+    isDomLoaded = false
     get openMobileNav(){
         return `collapse navbar-collapse ${this.isMobileToggle && 'show'}`
     }
@@ -25,4 +26,15 @@ export default class Navbar extends LightningElement{
         elem.scrollIntoView()
     }
 
+    renderedCallback(){
+        if(this.isDomLoaded){
+            return 
+        } else {
+            const elem = this.template.querySelector('.nav-link')
+            if(elem){
+                elem.classList.add('active')
+                this.isDomLoaded = true
+            }
+        }
+    }
 }
