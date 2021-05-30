@@ -5,9 +5,13 @@
     "author": "salesforcetroop",
     "bugs": "https://github.com/jaiswalSomi/salesforceconsulting/issues",
     "dependencies": {
+        "body-parser": "^1.19.0",
         "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
         "express": "^4.17.1",
-        "helmet": "^4.6.0"
+        "helmet": "^4.6.0",
+        "nodemailer": "^6.6.1"
     },
     "devDependencies": {
         "eslint": "^7.27.0",
@@ -23,7 +27,6 @@
         "yarn": ">=1.9.4"
     },
     "homepage": "https://github.com/jaiswalSomi/salesforceconsulting",
-
     "keywords": [
         "lwc"
     ],
