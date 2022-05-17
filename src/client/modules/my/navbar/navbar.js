@@ -20,9 +20,10 @@ export default class Navbar extends LightningElement{
             this.toggleMobileMenu()
         }
         const name = event.target.name.toLowerCase().replace(/\s+/g, '')
-        let tagName = name === 'home'? 'my-navbar':`my-${name}`
-        const elem = document.querySelector(tagName)
-        elem.scrollIntoView()
+        let tagName = name === 'home'? 'my-navbar': name === 'ourclients'? `my-clients` :`my-${name}`      
+        this.dispatchEvent(new CustomEvent('cscroll', {
+            detail:tagName
+        }))
     }
 
 }
